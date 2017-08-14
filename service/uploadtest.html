@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>  
+<html>  
+<head lang="en">  
+    <meta charset="UTF-8">  
+    <title>测试</title>  
+</head>  
+<body>  
+<form action="resignSell.php" method="post" enctype="multipart/form-data">  
+	<table>
+	<tr>
+	<td>id:</td>
+	<td><input type="text" name="s_id"/></td> 
+	</tr>
+	<tr>
+	<td>pass:</td>
+	<td><input type="password" name="pass"/></td>
+	<tr>
+	<td>name:</td>
+	<td><input type="text" name="s_name"/></td> 
+	</tr>
+	<tr>
+	<td>tel:</td>
+	<td><input type="text" name="sm_tel"/></td> 
+	</tr>
+	<tr>
+	<td>address:</td>
+	<td><input type="text" name="sm_address"/></td> 
+	</tr>
+	<tr>
+	<td>keyword:</td>
+	<td><input type="text" name="keyword"/></td> 
+	</tr>
+	<tr>
+	<td>introduce:</td>
+	<td><input type="text" name="introduce"/></td> 
+	</tr>
+	</tr></table><br/>
+	<input type="file" name="file"/>  <br/><br/>
+     	<input type="submit" value="提交商家信息">  <br/>
+</form>  <br/><br/>
+
+<form action="act_upload.php" method="post" enctype="multipart/form-data">  
+	<table>
+	<tr>
+	<td>tel:</td>
+	<td><input type="text" name="sm_tel"/></td> 
+	</tr>
+	<tr>
+	<td>act_name:</td>
+	<td><input type="text" name="act_name"/></td> 
+	</tr>
+	<tr>
+	<td>act_introduce:</td>
+	<td><input type="text" name="act_introduce"/></td> 
+	</tr>
+	</tr></table><br/>
+
+	<input type="file" name="files[]"/>  <br/><br/>
+	<input type="file" name="files[]"/>  <br/><br/>
+	<input type="file" name="files[]"/>  <br/><br/>
+
+    <input type="submit" value="提交活动信息">  <br/>
+</form> 
+
+</body>  
+</html> 

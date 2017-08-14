@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <WebView
+        android:id="@+id/webview_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+    
+    <include
+        android:id="@+id/register_head"
+        android:layout_height="wrap_content"
+        layout="@layout/common_above_title" 
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@color/blue_renren_pressed"
+        android:onClick="Book"
+        android:padding="10dp"
+        android:text="预 约"
+        android:textSize="20sp" />
+
+</RelativeLayout>

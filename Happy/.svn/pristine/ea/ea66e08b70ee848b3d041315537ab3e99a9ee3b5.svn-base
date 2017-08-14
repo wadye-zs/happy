@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_head"
+        android:layout_height="wrap_content"
+        layout="@layout/common_above_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/content_margin" >
+
+        <com.zx.widget.ClearEditTextView
+            android:id="@+id/f_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/text_field_without_top_border"
+            android:hint="请输入昵称"
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#ff555555"
+            android:textColorHint="#ff888888"
+            android:textSize="20.0sp" />
+
+        <com.zx.widget.ClearEditTextView
+            android:id="@+id/f_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cell_height"
+            android:background="@drawable/text_field_without_top_border"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#ff555555"
+            android:textColorHint="#ff888888"
+            android:textSize="20.0sp" />
+
+        <com.zx.widget.ClearEditTextView
+            android:id="@+id/s_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cell_height"
+            android:background="@drawable/text_field_without_top_border"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#ff555555"
+            android:textColorHint="#ff888888"
+            android:textSize="20.0sp" >
+        </com.zx.widget.ClearEditTextView>
+
+        <TextView
+            android:id="@+id/login_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_gravity="top"
+            android:layout_marginTop="15.0dip"
+            android:background="@color/blue_renren_pressed"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="mSure"
+            android:text="完成注册"
+            android:textColor="@color/black"
+            android:textSize="@dimen/submit_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

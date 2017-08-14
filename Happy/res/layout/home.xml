@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/back_title" >
+
+        <LinearLayout
+            android:id="@+id/linear_above_toHome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_above_menushow_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_head_left"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/button_above_more" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_above_more"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="MapView"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/ic_dialog_map" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
